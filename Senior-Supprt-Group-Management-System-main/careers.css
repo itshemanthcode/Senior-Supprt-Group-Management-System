@@ -1,0 +1,164 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #0c0fa3;
+    padding: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Support Section */
+.support-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.support-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.support-form input, .support-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.support-form button {
+    padding: 10px 20px;
+    background-color: #0c0fa3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.support-form button:hover {
+    background-color: #0c0fa3;
+}
+
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Careers Section */
+.careers-section {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 48%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.job-item p {
+    font-size: 16px;
+}
+
+.apply-btn {
+    padding: 10px 20px;
+    background-color: #0c0fa3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background-color: #0c0fa3;
+}
+
+/* Footer */
+footer {
+    background-color: #0c0fa3;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .job-listings {
+        flex-direction: column;
+    }
+
+    .job-item {
+        width: 100%;
+    }
+}

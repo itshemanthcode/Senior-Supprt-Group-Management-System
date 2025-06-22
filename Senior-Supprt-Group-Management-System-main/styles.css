@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #003f87; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  /* General Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Gradient background */
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navbar nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .navbar nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar nav ul li a:hover {
+    color: #ffcc00; /* Highlight on hover */
+  }
+  
+  .navbar .icons a {
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar nav ul {
+      display: none; /* Hide navbar links initially */
+      flex-direction: column;
+      background: linear-gradient(to right, #1e3c72, #2a5298); /* Same gradient */
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .navbar nav ul.active {
+      display: flex; /* Show on click */
+    }
+  
+    .hamburger-menu {
+      display: block; /* Visible for small screens */
+    }
+  }
+  
+  
+  .icons a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Full screen height */
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%; /* Cover the full viewport */
+    object-fit: cover; /* Maintain aspect ratio and cover area */
+    opacity: 0.7; /* Slight transparency for text readability */
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero-text p {
+    font-size: 2rem; /* Larger font for the quote */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text span {
+    font-size: 1.2rem; /* Larger font for the author */
+    font-style: italic;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo-img {
+    height: 40px; /* Adjust height as needed */
+    width: auto; /* Maintains aspect ratio */
+  }
+  
+  .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
